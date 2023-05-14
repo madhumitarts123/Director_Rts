@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Center Director</title>
+    <meta charset="UTF-8">
+<!--     <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6ed4f3356c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div id="logoremaining">
+                    <div id="logo">
+                        <span>P</span>
+                        <span style="color: bisque; margin-left: -10px;">ortfolio.</span>
+                    </div>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="index.html" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#about" onclick="closemenu()">Education</a></li>
+                    <li><a href="#Portfolio" onclick="closemenu()">Portfolio</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div> 
+        <div class="header-text">
+            <h1 style="color: bisque;"><span style="color: red;">Madhumita Kumari</span></h1><br>
+             <h3 style="color: bisque;">Director,RTS</h3>
+        </div> 
+    </div>
+    <!-- ------about------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/mumma.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="about-me">About Me</h2>
+                    <pr>
+                        Greetings one and all, I am Madhumita Kumari. I am a teacher, Director, lawyer and a Mother. I have been the Director of my institution named <span class="changes">Raj Computer Centre </span> for the past  <span class="changes">21 years.</span> I love to teach and I have been teaching several IT courses there too. I have a degree in BCA and above that a specialisation called MDCAT. I also have a degree in law. 
+                        I look forward to welcome you all to Raj Computer Centre, a community of learners.
+                        <!-- And I have a strong foundation in Data Structures and Algorithms. -->
+                    </pr>
+                    <div>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Achievements</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                            
+                        </div>
+                        <div class="tab-content active-tab" id="Skills" >
+                            <ul>
+                                <li class="outer"><span>Best Center Award</span><br><ul class="inner"><li>Awarded the Best Director award all over India in VCSM</li><li>for conswcutive 5 years 2010-15 </li></ul></li>
+                                <li class="outer"><span>Best SDC center Owner</span><br><ul class="inner"><li>Got the best SDC center Owner award,Nalanda </li></ul></li>
+                                <li class="outer"><span>Others</span><br><ul class="inner"><li>Online Teacher</li><li>(Civil Court,Hilsa) </li><li></li></ul></li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="Education">
+                            <ul>
+                                <li class="outer"><span>Matriculation</span><br><ul class="inner"><li>BSEB</li><li>Bithta,Bihar</li><li>64%</li></ul></li>
+                                <li class="outer"><span>Intermediate</span><br><ul class="inner"><li>BSEB</li><li>Bhagalpur,Bihar</li><li>70%</li></ul></li>
+                                <li class="outer"><span>Graduation</span><br><ul class="inner"><li></li><li>Bhagalpur,Bihar</li><li>72%</li></ul></li>
+                                <li class="outer"><span>LLB</span><br><ul class="inner"><li></li><li>Gaya,Bihar</li><li>64%</li></ul></li>
+                                <li class="outer"><span>MSC(Zoology)</span><br><ul class="inner"><li></li><li>Bhagalpur,Bihar</li><li></li></ul></li>
+                                <li class="outer"><span>MCA</span><br><ul class="inner"><li></li><li>Tamilnadu</li><li></li></ul></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------portfolio------ -->
+    <div id="Portfolio">
+        <div class="container">
+            <h1 class="sub-title">Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/yout.png">
+                    <div class="layer">
+                        <h3>Youtube Profile</h3>
+                        <a href="https://www.youtube.com/@rajcomputercentre5658" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/mumt.jpg">
+                    <div class="layer">
+                        <h3>Conducted Comptetitions</h3>
+                        <a href="https://www.youtube.com/watch?v=gHgSCAYJxyo" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/mumty.jpg">
+                    <div class="layer">
+                        <h3>Awarded by Hilsa SDO</h3>
+                        <a href="" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div>
+        <a href="#" class="button">See more</a>
+        </div> -->
+        <!-- ------contact------ -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col1">
+                        <div class="sub-title2">Contact Me </div>
+                        <p class="contact-list"><span><i class="fa-solid fa-paper-plane"></i></span>madhumita.rts@gmail.com</p>
+                        <p class="contact-list"><span><i class="fa-solid fa-square-phone-flip"></i></span>+91-9931005560</p>
+                        <p class="contact-list">
+                            <a href="https://instagram.com/madhu.mita.52056?igshid=NTc4MTIwNjQ2YQ==" target="_blank" class="icon2" ><i class="fa-brands fa-instagram" style="color: rgb(237, 122, 141);"></i></a>
+                            <a href="#" target="_blank" class="icon2" ><i class="fa-brands fa-facebook" style="color: blue;"></i></a>
+                        </p>
+                    </div>
+                    <div class="col2"></div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="end">
+            <h3>Thank You</h3>
+        </div> -->
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-content");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    
+    <script>
+        var sidemen = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemen.style.right = "0";
+        }
+        function closemenu(){
+            sidemen.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
